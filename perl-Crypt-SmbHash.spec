@@ -9,7 +9,7 @@ Summary(pl):	Modu³ Perla Crypt::SmbHash - generowanie skrótów LM/NT, takich jaki
 Name:		perl-Crypt-SmbHash
 Version:	0.02
 Release:	2
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a0077b2a00b212c9fd8d22343fb338e5
