@@ -5,7 +5,7 @@
 %define		pdir	Crypt
 %define		pnam	SmbHash
 Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
-Summary(pl):	Modu³ Perla Crypt::SmbHash - generuj±cy skróty LM/NT takie jak smbpasswd
+Summary(pl):	Modu³ Perla Crypt::SmbHash - generowanie skrótów LM/NT, takich jakie generuje smbpasswd
 Name:		perl-Crypt-SmbHash
 Version:	0.02
 Release:	2
