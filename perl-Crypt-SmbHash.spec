@@ -29,7 +29,7 @@ w plikach z has³ami dla Samby - tak, jak robi to program smbpasswd.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{!?_without_tests:%{__make} test}
 
