@@ -8,12 +8,12 @@ Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
 Summary(pl):	Modu³ Perla Crypt::SmbHash - generuj±cy skróty LM/NT takie jak smbpasswd
 Name:		perl-Crypt-SmbHash
 Version:	0.02
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +29,8 @@ w plikach z has³ami dla Samby - tak, jak robi to program smbpasswd.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -45,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Crypt/SmbHash.pm
+%{perl_vendorlib}/Crypt/SmbHash.pm
 %{_mandir}/man3/*
