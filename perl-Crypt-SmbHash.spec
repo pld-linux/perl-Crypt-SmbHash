@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	SmbHash
 Summary:	Crypt::SmbHash Perl module - generate LM/NT hashes like smbpasswd
-Summary(pl):	Modu≥ Perla Crypt::SmbHash - generowanie skrÛtÛw LM/NT, takich jakie generuje smbpasswd
+Summary(pl.UTF-8):   Modu≈Ç Perla Crypt::SmbHash - generowanie skr√≥t√≥w LM/NT, takich jakie generuje smbpasswd
 Name:		perl-Crypt-SmbHash
 Version:	0.12
 Release:	1
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module provides functions to generate LM/NT hashes used in
 Samba's 'password' files, like smbpasswd.
 
-%description -l pl
-Ten modu≥ udostÍpnia funkcje do generowania skrÛtÛw LM/NT, uøywanych
-w plikach z has≥ami dla Samby - tak, jak robi to program smbpasswd.
+%description -l pl.UTF-8
+Ten modu≈Ç udostƒôpnia funkcje do generowania skr√≥t√≥w LM/NT, u≈ºywanych
+w plikach z has≈Çami dla Samby - tak, jak robi to program smbpasswd.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
